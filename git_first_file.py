@@ -4,9 +4,16 @@ path = os.getcwd()
 
 
 def get_txt_file():
+    lst = []
     for file in os.listdir(path):
         if file.endswith('.txt'):
             print(file)
+            lst.append(file)
+    return lst
 
 
-get_txt_file()
+file = get_txt_file()
+print(file)
+print(len(file))
+
+
